@@ -2,7 +2,7 @@
 
 set -e
 
-rm appcontinuum.sln
+#rm appcontinuum.sln
 
 dotnet new sln -n appcontinuum
 
