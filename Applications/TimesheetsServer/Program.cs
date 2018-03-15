@@ -18,6 +18,7 @@ namespace TimesheetsServer
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .UseConfiguration(config)
+                .UseUrls("http://localhost:5004")
                 .Build();
 
             host.Run();

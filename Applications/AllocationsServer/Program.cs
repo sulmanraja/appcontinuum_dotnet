@@ -18,7 +18,8 @@ namespace AllocationsServer
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .UseConfiguration(config)
-                .Build();
+                .UseUrls("http://localhost:5001")
+		        .Build();
 
             host.Run();
         }

@@ -18,6 +18,7 @@ namespace RegistrationServer
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .UseConfiguration(config)
+                .UseUrls("http://localhost:5002")
                 .Build();
 
             host.Run();
